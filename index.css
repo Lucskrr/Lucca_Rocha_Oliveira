@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  label, input{
+    display: inline-block;
+    margin: 0 40px;
+    margin-bottom: 10px;
+}
+
+label{
+    width: calc(40% - 100px);
+    font-weight: bold;
+}
+input{
+    width: calc(60% - 100px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: grey;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.botões{
+    text-align: right;
+    margin-top: 20px;
+}
+
+button{
+    color: #fff;
+    padding: 10px 20px;
+    border: 0px;
+}
+
+button.envia{
+  background-color: #0c0c0c;
+}
+
+button.limpa{
+    background-color: #0c0c0c;
+}
+
+.imagens {
+  align-items: baseline;
+} 
+
+.linha-par {
+  background-color: #b98d8d; 
+}
+
+.linha-impar {
+  background-color: #9c7373; 
+}
+

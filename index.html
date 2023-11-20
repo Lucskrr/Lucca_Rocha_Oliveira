@@ -1,0 +1,133 @@
+<!--BOA NOITE PROFESSOR, FIZ UMA MUDANÇA NO HTML, MUDEI A ORDEM EM QUE ESTAVA O LIMPAR E O ENVIAR, PARA ENCAIXAR AS FUNCOES DE JS, 
+NO JS EU IMPLEMENTEI O FORMULARIO BY ID, E SUAS VALIDAÇOES, VALIDACOES SE NO NOME ESTA DIGITANDO APENAS LETRAS, VALIDAÇAO DE NUMERO DE
+TELEFONE, VALIDAÇAO EMAIL, VALIDAÇÃO DO CPF, E PRA TODAS AS VALIDAÇOES USEI REGEX, APENAS VALIDAÇOES DE ENTRADA, COLOQUEI UMA FUNÇAO PARA
+RESETAR O FORMULARIO E COLOQUEI ALGUNS
+ALERTAS PARA O USUARIO. APOS ISSO CRIO UMA VAR COM OS USUARIOS QUE TEM NO HTML, E A CADA INTERAÇÃO DE ENVIAR FORMULARIO, CRIA UMA ARRAY
+DE USUARIO,APAGANDO E REESCREVENDO COM O NOVO USUARIO MUDANDO A COR POR LINHAS PARES E IMPARES.
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia Fitness</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <h1>Academia Fitness</h1>
+  <nav>
+    <ul>
+      <li><a href="#relatorio">Relatório</a></li>
+      <li><a href="#dicas">Dicas de Treino</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div id="mensagemCadastro"></div>
+  <section id="cadastro">
+    <h3>Preencha os campos para realizar o cadastro</h3>
+<form id="cadastroo" method="post">
+<div>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required>
+</div>
+<div>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required>
+</div>
+<div>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" id="senha" required>
+</div>
+<div>
+    <label for="confirm">Confirme a Senha:</label>
+    <input type="password" name="confirm" id="confirm" required>
+</div>
+<div>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" name="telefone" id="telefone" required>
+</div>
+<div>
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" id="cpf" required>
+</div>
+<div>
+    <label for="data">Data de Nascimento:</label>
+    <input type="date" name="data" id="data" required>
+</div>
+<div class="botões">
+<button type="button" class="envia" onclick="enviaCadastro()">Enviar</button>
+<button type="button" class="limpa" onclick="resetaCadastro()">Limpar</button>
+</div>
+</form>
+</section>
+<br> <br>
+  <section id="relatorio">
+  <table border= "1">
+  <thead>
+    <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>CPF</th>
+        <th>Data de Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Eduardo</td>
+        <td>eduardogrunitzky@gmail.com</td>
+        <td>41 98788-6113</td>
+        <td>131.164.409-13</td>
+        <td>10/12/2005</td>
+    </tr>
+    <tr>
+        <td>Robert</td>
+        <td>robert@gmail.com</td>
+        <td>41 99988-7766</td>
+        <td>223.233.333-22</td>
+        <td>11/11/2011</td>
+    </tr>
+  </tbody>
+  </table>
+  </section>
+<br> <br>
+  <section id="dicas">
+<h3>Excercícios:</h3>
+<li>Cardiovascular: Exercícios aeróbicos como corrida, ciclismo, natação, pular corda são ótimos para a saúde do coração e queima de calorias.</li>
+<li>Treinamento de Força: Levantamento de peso, uso de máquinas ou exercícios com o peso do corpo ajudam a fortalecer músculos e ossos.</li>
+<li>Flexibilidade: Alongamentos e yoga melhoram a flexibilidade, reduzem a rigidez muscular e diminuem o risco de lesões.</li>
+<h3>Planos de Treino:</h3>
+<li>Comece com exercícios básicos para todos os grupos musculares, aumentando gradualmente a intensidade.</li>
+<li>Intermediários: Combine exercícios de força com cardio, variando os treinos para evitar adaptação muscular.</li>
+<li>Avançados: Introduza técnicas avançadas de treino, como superséries, drop sets, e treinos intervalados de alta intensidade (HIIT).</li>
+<h3>Importância da Variedade:</h3>
+<li>Alternar entre fases de intensidade alta, média e baixa ajuda a evitar estagnação e lesões.</li>
+<li>Diversificação: Experimentar diferentes modalidades de exercício mantém o interesse e desafia o corpo de maneiras novas.</li>
+<h3>Nutrição e Descanso:</h3>
+<li>Alimentação Balanceada: Nutrição adequada é essencial para suportar o treinamento e a recuperação.</li>
+<li>Descanso Adequado: O descanso é crucial para a recuperação muscular e evitar o overtraining.</li>
+<li>Cada pessoa é única, então é recomendado consultar um profissional de educação física ou um personal trainer para criar um plano de treino personalizado com base em objetivos específicos, capacidades físicas e condições de saúde.</li>
+  </section>
+<br> <br>
+  <section id="produtos">
+   <h2>Nossos Produtos:</h2>
+   <div class="imagens">
+    <img src="Creatina.png" alt="Creatina" >
+    <img src="Cafeina.png" alt="Cafeina">
+    <img src="pré treino.png" alt="Pré">
+</div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Academia Fitness. Todos os direitos reservados.</p>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
